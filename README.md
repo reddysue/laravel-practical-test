@@ -13,7 +13,7 @@ To create custom forms for surveys and questionnaires!
   <img alt="form-setting" src="form-setting.png">
 
 #### Public Form
-You must use Vue.Js or React Js or Blade. UI can be simple.
+You can use Blade. UI can be simple.
 
 - [ ] Customer can submit a form depending on the form render.
 - [ ] After submitting the form, API has to send mail.
