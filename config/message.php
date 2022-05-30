@@ -15,4 +15,5 @@ return [
     'unauthorised'=>'Unauthorized',
     'mailSubject'=>'Larvel Practical Test',
     'mailSuccess'=>'Email is sent successfully.',
+    'mailBody'=>'Thank you',
 ];

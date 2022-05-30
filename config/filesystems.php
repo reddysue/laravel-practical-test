@@ -72,5 +72,6 @@ return [
     'links' => [
         public_path('storage') => storage_path('app/public'),
     ],
-
+    'userToken'=> 'Bearer '.env('USER_TOKEN'),
+    'apiUrl'=> env('API_URL')
 ];

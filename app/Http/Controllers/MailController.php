@@ -19,9 +19,7 @@ class MailController extends Controller
 
     public function index(Request $request)
     {
-        
-        $body = view('email', compact('setting'));
-        $this->mailService->sendEmail($body);
+        $this->mailService->sendEmail(config('message.mailBody'));
         return $this->httpResponseUtility->successResponse(null, config('message.mailSuccess')); 
     }
 }
