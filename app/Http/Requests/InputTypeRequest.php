@@ -25,6 +25,7 @@ class InputTypeRequest extends BaseRequest
     {
         return [
             'name'=> 'required',
+            'type'=> 'required',
         ];
     }
 }

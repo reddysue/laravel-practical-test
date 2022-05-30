@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('user_id');
             $table->string('name');
+            $table->enum('type', ['text','number','date']);
             $table->timestamps();
         });
     }

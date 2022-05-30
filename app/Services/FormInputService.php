@@ -18,6 +18,7 @@ class FormInputService
         $data = [];
         $data['user_id']= auth()->id();
         $data['name']= $request->name;
+        $data['type']= $request->type;
         return $this->formInputRepo->create($data);
     }
 
