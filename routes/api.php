@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AuthController;
+use App\Http\Controllers\API\UserFormInputController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,7 @@ Route::group(['prefix' => 'v1.0'], function () {
         Route::post('login', 'login');
     });
     Route::middleware('auth:sanctum')->group(function () {
-    
+        Route::post('add-input-type', [UserFormInputController::class, 'add']);
+        Route::get('input-types', [UserFormInputController::class, 'list']);
     });
 });

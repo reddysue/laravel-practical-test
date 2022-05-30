@@ -19,31 +19,31 @@ class HttpResponseUtility
     
     public function badRequestResponse($data = null, $message = null)
     {
-        return $this->jsonResponse($data, config('http_status.badRequest'), $message ?? trans('message.badRequestMsg'));
+        return $this->jsonResponse($data, config('http_status.badRequest'), $message ?? config('message.badRequestMsg'));
     }
 
     public function notFoundResponse($data = null, $message = null)
     {
-        return $this->jsonResponse($data, config('http_status.badRequest'), $message ?? trans('message.notFoundMsg'));
+        return $this->jsonResponse($data, config('http_status.badRequest'), $message ?? config('message.notFoundMsg'));
     }
 
     public function unauthorizedResponse($data = null, $message = null)
     {
-        return $this->jsonResponse($data, config('http_status.unauthorized'), $message ?? trans('message.notFoundMsg'));
+        return $this->jsonResponse($data, config('http_status.unauthorized'), $message ?? config('message.notFoundMsg'));
     }
     
     public function createResponse($data = null, $message = null)
     {
-        return $this->jsonResponse($data, config('http_status.created'), $message ?? trans('message.createSuccessMsg'));
+        return $this->jsonResponse($data, config('http_status.created'), $message ?? config('message.createSuccessMsg'));
     }
 
     public function updateResponse($data = null, $message = null)
     {
-        return $this->jsonResponse($data, config('http_status.updated'), $message ?? trans('message.updateSuccessMsg'));
+        return $this->jsonResponse($data, config('http_status.updated'), $message ?? config('message.updateSuccessMsg'));
     }
 
     public function deleteResponse($data = null, $message = null)
     {
-        return $this->jsonResponse($data, config('http_status.deleted'), $message ?? trans('message.deleteSuccessMsg'));
+        return $this->jsonResponse($data, config('http_status.deleted'), $message ?? config('message.deleteSuccessMsg'));
     }
 }
