@@ -13,4 +13,6 @@ return [
     'badRequestMsg' => 'Bad Request.',
     'successLogout' => 'Logout successfully.',
     'unauthorised'=>'Unauthorized',
+    'mailSubject'=>'Larvel Practical Test',
+    'mailSuccess'=>'Email is sent successfully.',
 ];

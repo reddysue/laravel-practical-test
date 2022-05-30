@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\UserFormInputController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +24,6 @@ Route::group(['prefix' => 'v1.0'], function () {
     Route::middleware('auth:sanctum')->group(function () {
         Route::post('add-input-type', [UserFormInputController::class, 'add']);
         Route::get('input-types', [UserFormInputController::class, 'list']);
+        Route::get('send-mail', [MailController::class, 'index']);
     });
 });
